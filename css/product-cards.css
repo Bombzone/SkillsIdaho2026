@@ -1,0 +1,114 @@
+:root {
+    --primary: #fbd57c;
+    --secondary: #131126;
+}
+html {
+    overflow-x: hidden;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+product-card {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+
+    & a {text-decoration: none;
+    color: var(--secondary);}
+    
+    transition: transform .1s;
+    &::after {
+        content: "";
+        
+    }
+    
+    &:hover {
+        cursor: pointer;
+        transform: rotate(2deg) scale(1.05);
+        &::after {
+            content: "View";
+            
+            font-size: 4rem;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            font-weight: bold;
+
+            transform: translate(-50%, -50%);
+
+
+        }
+    }
+}
+
+product-card:nth-of-type(2n) {
+    flex-direction: row-reverse;
+    justify-content: end;
+
+    & .product-content {
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    text-align: right;
+    }
+
+    & h2 {
+    align-self: flex-end;
+
+    }
+
+
+    
+}
+product-card .product-content {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+}
+product-card h2 {
+    background-color: var(--primary);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0 2rem 0 2rem;
+    border-bottom: 4px orange solid;
+
+    padding: 0.5rem 1rem;
+    margin-bottom: 4px;
+
+    color: var(--secondary);
+}
+product-card img {
+    background-image: linear-gradient(#131126,#0000);
+    border-radius: 50%;
+    padding: 0.5rem;
+    max-width: 200px;
+    aspect-ratio: 1;
+    filter: drop-shadow(0 0 5px #3f1542);
+}
+product-card {
+    & p{
+
+        margin: 1rem;
+        max-width: 650px;
+    }
+
+    & h4 {
+       margin: 0; 
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .product-content {
+        flex-direction: column;
+    }
+}

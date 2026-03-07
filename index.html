@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Aurora Coffee Roasters</title>
+        <link rel="shortcut icon" href="images/Logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/product-cards.css">
+
+    </head>
+    <body>
+        <nav-bar></nav-bar>
+        <main>
+            <h1>Aroura Coffee Roasters</h1>
+            <div class="row">
+            <div>
+                
+                <!-- Call to action -->
+                <h2>
+                    “Join the Aurora Coffee Club”
+                </h2>
+                <p>
+                    Sign up for exclusive roasts, brewing tips, and special discounts delivered straight to your inbox.
+                </p>
+                <form class="row">
+                    <input name="email" required placeholder="Email" type="email">
+                    <button type="submit">Sign Up</button>
+                </form>
+                <h2>Testimonials</h2>
+                <p>“Aurora’s Sunrise Blend is the only reason I wake up willingly before 7 AM.”
+                </p>
+                <sub>— Maya L., Seattle</sub>
+                <p>
+                    
+                    “I tried the Midnight Roast once and now every other coffee tastes like disappointment.”
+                </p>
+                <sub>
+
+                    — Daniel K., Denver
+                </sub>
+            </div>
+                <img class="hero-image" src="images/image.png" alt="">
+            </div>
+            <!-- Mission statement -->
+            <div>
+                <h2>“At Aurora Coffee Roasters, we believe great coffee starts with great care.”</h2>
+                <p> Every bean we roast is ethically sourced from farmers who share our commitment to sustainability,
+                    quality, and craftsmanship. Through small-batch roasting and thoughtful sourcing, we aim to bring
+                    exceptional coffee experiences to every cup. <br> Because great mornings deserve great coffee. </p>
+            </div>
+            <!-- Products -->
+             <h2>Coffee Options</h2>
+            <div class="products">
+                <product-card link="./ethiopian.html" 
+                    title="Ethiopian Yirgacheffe – Floral Light Roast" quote='“Bright, complex, and unforgettable.”'
+                    description="This single-origin Ethiopian coffee is known for its vibrant character and delicate floral aroma.
+Expect bright acidity, fruity notes, and a silky finish that showcases why Ethiopian beans are
+among the most celebrated in the world." 
+                    image="images/ethiopian.png">
+                </product-card>
+                <product-card 
+                    title="Colombian Reserve – Balanced Medium Roast"
+                    quote='“Smooth, dependable, and quietly excellent.”' description="Grown in the lush mountains of Colombia, this medium roast offers a balanced flavor profile with
+notes of caramel, toasted almond, and a hint of citrus. Colombian Reserve is Aurora’s everyday
+favorite — easy to love and hard to replace" 
+                    image="images/colombian.png">
+                </product-card>
+                
+                <product-card title="Midnight Roast – Bold Dark Roast" quote='“Coffee that stays up as late as you do.”'
+                    description="Midnight Roast delivers a deep, full-bodied flavor with hints of dark chocolate and toasted
+caramel. Roasted longer for a rich intensity, it’s ideal for espresso lovers or anyone who prefers
+a bold cup that makes a statement." image="images/midnight.png">
+                </product-card>
+                
+                <product-card title="Sunrise Blend – Bright Morning Roast" 
+                quote='“Wake up to something wonderful.”'
+                    description="This lively light roast brings sunshine to your cup with bright citrus notes and a smooth honey
+finish. Carefully sourced from high-elevation farms and roasted in small batches, Sunrise Blend
+is the perfect companion for slow mornings and fresh starts." 
+                image="images/sunrise.png">
+                </product-card>
+            </div>
+        </main>
+    <custom-footer></custom-footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
